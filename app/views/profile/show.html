@@ -1,103 +1,137 @@
-  <!DOCTYPE html>
-  <html ng-app="livingabroad.controllers">
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
+<body class="grey lighten-4" ng-controller="profile">
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+  <nav>
+    <div class="nav-wrapper blue darken-3">
+      <a href="#" class="brand-logo center">Logo</a>
+    </div>
+  </nav>
+    
+  <div class="container">
 
-    <body class="grey lighten-4" ng-controller="profile">
+    <div class="row" style="margin-top: 10px;">
+      <div class="col s12 m4 l4">
 
-      <nav>
-        <div class="nav-wrapper blue darken-3">
-          <a href="#" class="brand-logo center">Logo</a>
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="<%= current_user.photo_url %>">
+          </div>    
         </div>
-      </nav>
+
+      </div>
+
+      <div class="col s12 m8 l8">
         
-      <div class="container">
-
-        <div class="row" style="margin-top: 10px;">
-          <div class="col s12 m4 l4">
-
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="<%= current_user.photo_url %>">
-              </div>    
-            </div>
-
-          </div>
-
-          <div class="col s12 m8 l8">
-            
-            <div class="chip col l12 s12 m12 grey lighten-4" ng-repeat="link in links">
-              {{link.tipo}} - {{link.url}}
-              <i class="material-icons">close</i>
-            </div>
-
-          </div>
+        <div class="chip col l12 grey lighten-4" ng-repeat="link in profile.links">
+          {{link.type}} - {{link.url}}
+          <i class="material-icons">close</i>
         </div>
 
-        <div class="row">
+      </div>
+    </div>
 
-          <div class="col s12 m12 ll2">
+    <div class="row">
 
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <div class="input-field col s12">
-                  <textarea id="textarea1" class="materialize-textarea"></textarea>
-                  <label for="textarea1">Description</label>
-                </div>
-              </div>    
+      <div class="col s12 m12 ll2">
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+
+              <div class="col s12 m12 ll2 left" ng-hide="modeEdit">
+                <a href class="right" ng-click="showEditDescription()">
+                  <i class="material-icons grey-text">create</i>
+                </a>
+                <p>{{profile.description}}</p>
+              </div>
+
+              <div class="input-field col s12" ng-hide="!modeEdit">
+                <textarea id="textarea1" class="materialize-textarea" ng-model="newDescription"></textarea>
+                <label for="textarea1">Description</label>
+                <a class="waves-effect waves-light btn" ng-click="changeDescription()">save</a>
+                <a class="waves-effect waves-teal btn-flat" ng-click="cancelEditDescription()">cancel</a>
+              </div>
             </div>
-          </div>
-
+          </div>    
         </div>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col s12 m12 l12">
+        <div class="chip" style="margin-right: 5px;" ng-repeat="tag in profile.tags">
+          {{tag}}
+          <i class="material-icons">close</i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">add</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating btn-medium red modal-trigger" href="#addTagModal"><i class="material-icons">label</i></a></li>
+      <li><a class="btn-floating btn-medium blue darken-1 modal-trigger" href="#addLinkModal"><i class="material-icons">link</i></a></li>
+    </ul>
+  </div>
+
+  <!-- Modal Add Tag -->
+  <div id="addTagModal" class="modal">
+    <form ng-submit="addTag()">
+      <div class="modal-content">
 
         <div class="row">
-
+          
           <div class="col s12 m12 l12">
-            <div class="chip" style="margin-right: 5px;" ng-repeat="tag in tags">
-              {{tag}}
-              <i class="material-icons">close</i>
-            </div>
+            <h4>Add new tag to profile</h4>
           </div>
+
+          <div class="input-field col s12 m12 l12">
+            <input placeholder="tag name" id="tag" type="text" class="validate" ng-model="newTag">
+            <label for="first_name">Tag</label>
+          </div>
+
         </div>
       </div>
-
-      <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-        <a class="btn-floating btn-large red">
-          <i class="large material-icons">add</i>
-        </a>
-        <ul>
-          <li><a class="btn-floating btn-medium red modal-trigger" href="#modal1"><i class="material-icons">label</i></a></li>
-          <li><a class="btn-floating btn-medium blue darken-1"><i class="material-icons">link</i></a></li>
-        </ul>
+      <div class="modal-footer">
+        <button class="modal-action waves-effect waves-green btn-flat" type="submit">Add</button>
+        <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Cancel</a>
       </div>
+    </form>
+  </div>
 
-      <div id="modal1" class="modal">
-        <div class="modal-content">
-          <h4>Modal Header</h4>
-          <p>A bunch of text</p>
+  <!-- Modal Add Link -->
+  <div id="addLinkModal" class="modal">
+    <form ng-submit="addLink()">
+      <div class="modal-content row">
+        <div class="col s12 m12 l12">
+          <h4>Add new link to profile</h4>
         </div>
-        <div class="modal-footer">
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        <div class="input-field col s12 m12 l12">
+          <input placeholder="Placeholder" id="tag" type="text" class="validate" ng-model="newLink.url">
+          <label for="first_name">Url</label>
         </div>
       </div>
+      <div class="modal-footer">
+        <button class="modal-action modal-close waves-effect waves-green btn-flat" type="submit">Add</button>
+        <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Cancel</a>
+      </div>
+    </form>
+  </div>
 
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="/js/materialize.min.js"></script>
-      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-      <script type="text/javascript" src="/js/controllers/profile.js"></script>        
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script type="text/javascript" src="/js/materialize.min.js"></script>
 
-      <script type="text/javascript">
-        $(document).ready(function(){
-          $('.modal-trigger').leanModal();
-        });
-      </script>
+  <%= javascript_include_tag 'controllers/profile_controller', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'services/profile_service', 'data-turbolinks-track' => true %>
 
-    </body>
-  </html>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.modal-trigger').leanModal();
+    });
+  </script>
+
+</body>
