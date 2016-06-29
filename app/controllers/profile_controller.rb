@@ -1,6 +1,12 @@
 class ProfileController < ApplicationController
   def show
-  	puts '------------------------>'
-  	puts @current_user
   end
+
+  def addTag
+
+  	tag = params[:tag]
+  	render :json => {tag: tag}
+
+  end
+
 end

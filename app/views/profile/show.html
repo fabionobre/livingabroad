@@ -21,7 +21,7 @@
 
       <div class="col s12 m8 l8">
         
-        <div class="chip col l12 grey lighten-4" ng-repeat="link in profile.links">
+        <div class="chip col s12 m12 l12 grey lighten-4" ng-repeat="link in profile.links">
           {{link.type}} - {{link.url}}
           <i class="material-icons">close</i>
         </div>
@@ -114,14 +114,12 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button class="modal-action modal-close waves-effect waves-green btn-flat" type="submit">Add</button>
+        <button class="modal-action waves-effect waves-green btn-flat" type="submit">Add</button>
         <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Cancel</a>
       </div>
     </form>
   </div>
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
   <script type="text/javascript" src="/js/materialize.min.js"></script>
 
   <%= javascript_include_tag 'controllers/profile_controller', 'data-turbolinks-track' => true %>

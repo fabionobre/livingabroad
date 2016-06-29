@@ -9,6 +9,9 @@ Rails.application.routes.draw do
   get 'home/show'
 
   get 'profile/show'
+  post 'profile/tag', to: 'tag#add'
+  post 'profile/link', to: 'link#add'
+
 
   root to: "home#show"
 

@@ -30,14 +30,19 @@ var controllers = angular.module('livingabroad.controller', [])
 	}
 
 	$scope.addTag = function() {
-		$scope.tags.push($scope.newTag);
-		resetNewTag();
-		$('#addTagModal').closeModal();
+		Profile.addTag($scope.newTag).then(function(result) {
+			$scope.profile.tags.push($scope.newTag);
+			resetNewTag();
+			$('#addTagModal').closeModal();
+		},
+		function() {
+			console.log("ERROR");
+		});		
 	}
 
 	$scope.addLink = function() {
-		Profile.addUrl().then(function(result) {
-			$scope.links.push($scope.newLink);
+		Profile.addUrl($scope.newLink).then(function(result) {
+			$scope.profile.links.push($scope.newLink);
 			resetNewLink();
 			$('#addLinkModal').closeModal();
 		},
