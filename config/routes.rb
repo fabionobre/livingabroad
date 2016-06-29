@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'sessions/destroy'
   get 'home/show'
 
+	# Profiles
   get 'profile/show'
   post 'profile/tag', to: 'tag#add'
   post 'profile/link', to: 'link#add'
