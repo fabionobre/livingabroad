@@ -8,6 +8,10 @@
     
   <div class="container">
 
+        <select ng-model="selectedItem" ng-options="linkType.description for linkType in linkTypes">
+          <option value="" disabled selected>Choose your option</option>
+        </select>
+
     <div class="row" style="margin-top: 10px;">
       <div class="col s12 m4 l4">
 
@@ -108,9 +112,16 @@
         <div class="col s12 m12 l12">
           <h4>Add new link to profile</h4>
         </div>
+
+        <div class="input-field col s12">
+          <select class="browser-default">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="{{linkType.id}}" ng-repeat="linkType in linkTypes">{{linkType.description}}</option>
+          </select>
+        </div>
+
         <div class="input-field col s12 m12 l12">
-          <input placeholder="Placeholder" id="tag" type="text" class="validate" ng-model="newLink.url">
-          <label for="first_name">Url</label>
+          <input placeholder="Url" id="tag" type="text" class="validate" ng-model="newLink.url">
         </div>
       </div>
       <div class="modal-footer">

@@ -13,7 +13,9 @@ Rails.application.routes.draw do
   post 'profile/tag', to: 'tag#add'
   post 'profile/link', to: 'link#add'
 
-
+	# Links
+  get 'link/listTypes', to: 'link#listTypes'
+  
   root to: "home#show"
 
 end

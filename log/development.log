@@ -4561,3 +4561,1708 @@ Started POST "/profile/link?type=0&url=aaaaa" for ::1 at 2016-06-28 21:14:20 -03
 Processing by LinkController#add as JSON
   Parameters: {"type"=>"0", "url"=>"aaaaa"}
 Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-06-29 18:34:18 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProfileController#show as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered profile/show.html within layouts/application (557.6ms)
+Completed 200 OK in 735ms (Views: 665.1ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 18:30:37 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (88.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (241.7ms)
+Completed 200 OK in 410ms (Views: 279.7ms | ActiveRecord: 88.2ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 18:30:40 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-9d97ef14640730d288481b9bc2ee5ca00ddf880a2700982b26ff13b7a45a8c53.js?body=1" for ::1 at 2016-07-01 18:30:40 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 18:30:40 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 18:30:40 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 18:30:40 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 18:30:40 -0300
+
+
+Started GET "/assets/services/profile_service.self-f98731533dbf7c643017a04f9696b3df76f9c4644cfa5efbe8aab75c2f61ed99.js?body=1" for ::1 at 2016-07-01 18:30:40 -0300
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 18:31:25 -0300
+Processing by ProfileController#show as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered profile/show.html within layouts/application (33.6ms)
+Completed 200 OK in 84ms (Views: 82.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 18:31:25 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 18:31:26 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 18:31:26 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 18:31:26 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 18:31:26 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-9d97ef14640730d288481b9bc2ee5ca00ddf880a2700982b26ff13b7a45a8c53.js?body=1" for ::1 at 2016-07-01 18:31:26 -0300
+
+
+Started GET "/assets/services/profile_service.self-f98731533dbf7c643017a04f9696b3df76f9c4644cfa5efbe8aab75c2f61ed99.js?body=1" for ::1 at 2016-07-01 18:31:26 -0300
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 18:35:34 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (527.7ms)
+Completed 200 OK in 604ms (Views: 390.0ms | ActiveRecord: 212.6ms)
+
+
+Started GET "/assets/services/profile_service.self-ab4279da3d5a2059ca1554d20de8ee51868583f1bb75d69a6ebf91188d691fb0.js?body=1" for ::1 at 2016-07-01 18:35:36 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 18:35:36 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 18:35:36 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 18:35:36 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 18:35:36 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 18:35:36 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-9d97ef14640730d288481b9bc2ee5ca00ddf880a2700982b26ff13b7a45a8c53.js?body=1" for ::1 at 2016-07-01 18:35:36 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 18:35:54 -0300
+
+ActionController::RoutingError (No route matches [GET] "/link/listTypes"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (23.0ms)
+  Rendered /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (251.9ms)
+  Rendered /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (234.8ms)
+  Rendered /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (411.3ms)
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 18:36:15 -0300
+
+SyntaxError (/Users/fabionobre/workspace/livingabroad.git/app/controllers/link_controller.rb:9: syntax error, unexpected ',', expecting =>
+...d: 1, description: 'whatsapp'], [id: 2, description: 'facebo...
+...                               ^
+/Users/fabionobre/workspace/livingabroad.git/app/controllers/link_controller.rb:9: syntax error, unexpected '}', expecting keyword_end):
+  app/controllers/link_controller.rb:9: syntax error, unexpected ',', expecting =>
+  app/controllers/link_controller.rb:9: syntax error, unexpected '}', expecting keyword_end
+
+
+  Rendered /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (153.0ms)
+  Rendered /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (114.3ms)
+  Rendered /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/fabionobre/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (276.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (31.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddLinkTypes (20160701213825)
+  [1m[35m (15.5ms)[0m  BEGIN
+  [1m[36m (897.9ms)[0m  [1mCREATE TABLE "link_types" ("id" serial primary key, "description" character varying) [0m
+  [1m[35mSQL (37.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160701213825"]]
+  [1m[36m (23.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (26.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'link_types'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.4ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 18:41:15 -0300
+  [1m[35mActiveRecord::SchemaMigration Load (1.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by LinkController#listTypes as HTML
+  [1m[36mLinkType Load (18.4ms)[0m  [1mSELECT "link_types".* FROM "link_types"[0m
+Completed 200 OK in 51ms (Views: 4.2ms | ActiveRecord: 19.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to AddLinkTypes (20160701213825)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (99.9ms)[0m  DROP TABLE "link_types"
+  [1m[36mSQL (15.7ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20160701213825"]]
+  [1m[35m (53.2ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (4.1ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddLinkTypes (20160701213825)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (36.7ms)[0m  [1mCREATE TABLE "link_types" ("id" serial primary key, "description" character varying, "name" character varying) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160701213825"]]
+  [1m[36m (17.2ms)[0m  [1mCOMMIT[0m
+Migrating to SeedLinkTypes (20160701214208)
+  [1m[35m (15.6ms)[0m  BEGIN
+  [1m[36m (22.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to SeedLinkTypes (20160701214208)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to SeedLinkTypes (20160701214208)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to SeedLinkTypes (20160701214208)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to SeedLinkTypes (20160701214208)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (47.3ms)[0m  [1mINSERT INTO "link_types" ("description", "name") VALUES ($1, $2) RETURNING "id"[0m  [["description", "Facebook"], ["name", "facebook"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "link_types" ("description", "name") VALUES ($1, $2) RETURNING "id"  [["description", "Instagram"], ["name", "instagram"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "link_types" ("description", "name") VALUES ($1, $2) RETURNING "id"[0m  [["description", "Snapchat"], ["name", "snapchat"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "link_types" ("description", "name") VALUES ($1, $2) RETURNING "id"  [["description", "Whatsapp"], ["name", "whatsapp"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "link_types" ("description", "name") VALUES ($1, $2) RETURNING "id"[0m  [["description", "Pinterest"], ["name", "pinterest"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "link_types" ("description", "name") VALUES ($1, $2) RETURNING "id"  [["description", "Linkedin"], ["name", "linkedin"]]
+  [1m[36mSQL (16.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160701214208"]]
+  [1m[35m (15.7ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (3.5ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'link_types'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 18:54:33 -0300
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by LinkController#listTypes as HTML
+  [1m[36mLinkType Load (16.7ms)[0m  [1mSELECT "link_types".* FROM "link_types"[0m
+Completed 200 OK in 172ms (Views: 114.8ms | ActiveRecord: 31.6ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 18:54:39 -0300
+Processing by ProfileController#show as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered profile/show.html within layouts/application (76.9ms)
+Completed 200 OK in 200ms (Views: 196.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 18:56:49 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (338.2ms)
+Completed 200 OK in 536ms (Views: 535.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 18:56:51 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 18:56:51 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 18:56:51 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 18:56:51 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-8110c3e4e829dbaff43309d4b1a34d23e88ced066ed325e92a487af936a36f71.js?body=1" for ::1 at 2016-07-01 18:56:51 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 18:56:51 -0300
+
+
+Started GET "/assets/services/profile_service.self-ab4279da3d5a2059ca1554d20de8ee51868583f1bb75d69a6ebf91188d691fb0.js?body=1" for ::1 at 2016-07-01 18:56:51 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 18:56:51 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (3.5ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 8ms (Views: 2.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 18:57:10 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (56.8ms)
+Completed 200 OK in 128ms (Views: 127.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 18:57:10 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 18:57:10 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 18:57:11 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 18:57:11 -0300
+
+
+Started GET "/assets/services/profile_service.self-33639912b1a72b43ddafb0d86d24a1aa8b2ea3affb5977be10934c62fb2c055c.js?body=1" for ::1 at 2016-07-01 18:57:11 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 18:57:11 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-8110c3e4e829dbaff43309d4b1a34d23e88ced066ed325e92a487af936a36f71.js?body=1" for ::1 at 2016-07-01 18:57:11 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 18:57:11 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (0.5ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 18:57:27 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (44.3ms)
+Completed 200 OK in 88ms (Views: 85.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 18:57:28 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 18:57:28 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 18:57:28 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 18:57:28 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 18:57:28 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-8110c3e4e829dbaff43309d4b1a34d23e88ced066ed325e92a487af936a36f71.js?body=1" for ::1 at 2016-07-01 18:57:28 -0300
+
+
+Started GET "/assets/services/profile_service.self-33639912b1a72b43ddafb0d86d24a1aa8b2ea3affb5977be10934c62fb2c055c.js?body=1" for ::1 at 2016-07-01 18:57:28 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 18:57:28 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (0.6ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 42ms (Views: 8.4ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 18:57:46 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (89.5ms)
+Completed 200 OK in 157ms (Views: 154.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 18:57:47 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 18:57:47 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 18:57:47 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 18:57:47 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 18:57:47 -0300
+
+
+Started GET "/assets/services/profile_service.self-624dbb02b6bafb500263be224f3519ff3a240cb2eb0d1d8ad80581c83553aa62.js?body=1" for ::1 at 2016-07-01 18:57:47 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-8110c3e4e829dbaff43309d4b1a34d23e88ced066ed325e92a487af936a36f71.js?body=1" for ::1 at 2016-07-01 18:57:47 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 18:57:48 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (0.4ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 18:58:32 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (93.3ms)
+Completed 200 OK in 145ms (Views: 143.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 18:58:33 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 18:58:33 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 18:58:33 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-fd5c805a9ed3244a7a88d1b1c281771edccc70bb01875cafd34d130b7c97061f.js?body=1" for ::1 at 2016-07-01 18:58:33 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 18:58:33 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 18:58:33 -0300
+
+
+Started GET "/assets/services/profile_service.self-ab4279da3d5a2059ca1554d20de8ee51868583f1bb75d69a6ebf91188d691fb0.js?body=1" for ::1 at 2016-07-01 18:58:33 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 18:58:34 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (1.0ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 14ms (Views: 2.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 18:58:49 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (164.0ms)
+Completed 200 OK in 560ms (Views: 559.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 18:58:50 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 18:58:50 -0300
+
+
+Started GET "/assets/services/profile_service.self-f2f87e3d17b4085901d9a9435f32c45e38f7728a52e2e78239d500f42f5c8966.js?body=1" for ::1 at 2016-07-01 18:58:50 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 18:58:50 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 18:58:50 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 18:58:50 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-fd5c805a9ed3244a7a88d1b1c281771edccc70bb01875cafd34d130b7c97061f.js?body=1" for ::1 at 2016-07-01 18:58:50 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 18:58:51 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (0.6ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 18:58:53 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (5.9ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 18:58:54 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 18:58:54 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 18:58:54 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 18:58:54 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 18:58:54 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-fd5c805a9ed3244a7a88d1b1c281771edccc70bb01875cafd34d130b7c97061f.js?body=1" for ::1 at 2016-07-01 18:58:54 -0300
+
+
+Started GET "/assets/services/profile_service.self-f2f87e3d17b4085901d9a9435f32c45e38f7728a52e2e78239d500f42f5c8966.js?body=1" for ::1 at 2016-07-01 18:58:54 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 18:58:55 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (0.4ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 19:00:58 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (230.0ms)
+Completed 200 OK in 292ms (Views: 289.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:00:59 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 19:00:59 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:00:59 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-6b74a6bcd46214d1ec9f0ff1ec723b72e28db752b1af893628c83f841c1e0db5.js?body=1" for ::1 at 2016-07-01 19:00:59 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-01 19:00:59 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 19:00:59 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 19:00:59 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 19:01:00 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (0.4ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 19:01:23 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (43.0ms)
+Completed 200 OK in 99ms (Views: 97.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 19:01:24 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-4bd3ffda50f4010b9f32cbd011bc0fcb3cb2071179cb8483285efab6346c07e0.js?body=1" for ::1 at 2016-07-01 19:01:24 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:01:24 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 19:01:24 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:01:24 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 19:01:24 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-01 19:01:24 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 19:01:24 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (0.6ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 19:06:58 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (243.1ms)
+Completed 200 OK in 335ms (Views: 324.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:06:59 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:06:59 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 19:06:59 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 19:06:59 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 19:06:59 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-fe1c4698ae9bd3ea546da1329047a2023897681cf3ef5d334eb83e2f86a04fa2.js?body=1" for ::1 at 2016-07-01 19:06:59 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-01 19:06:59 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 19:07:00 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (0.8ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 19:08:18 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (156.4ms)
+Completed 200 OK in 316ms (Views: 314.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:08:19 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 19:08:19 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 19:08:19 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 19:08:19 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:08:19 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-fe1c4698ae9bd3ea546da1329047a2023897681cf3ef5d334eb83e2f86a04fa2.js?body=1" for ::1 at 2016-07-01 19:08:19 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-01 19:08:19 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 19:08:20 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (0.7ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 19:08:41 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (34.9ms)
+Completed 200 OK in 108ms (Views: 106.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 19:08:41 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 19:08:41 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:08:41 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 19:08:41 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:08:41 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-fe1c4698ae9bd3ea546da1329047a2023897681cf3ef5d334eb83e2f86a04fa2.js?body=1" for ::1 at 2016-07-01 19:08:41 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-01 19:08:41 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 19:08:42 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (0.5ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 19:08:54 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (35.8ms)
+Completed 200 OK in 98ms (Views: 97.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:08:55 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 19:08:55 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 19:08:55 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:08:55 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 19:08:55 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-fe1c4698ae9bd3ea546da1329047a2023897681cf3ef5d334eb83e2f86a04fa2.js?body=1" for ::1 at 2016-07-01 19:08:55 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-01 19:08:55 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 19:08:55 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (0.4ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 19:11:27 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (207.3ms)
+Completed 200 OK in 354ms (Views: 347.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 19:11:28 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 19:11:28 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:11:28 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 19:11:28 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:11:28 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-fe1c4698ae9bd3ea546da1329047a2023897681cf3ef5d334eb83e2f86a04fa2.js?body=1" for ::1 at 2016-07-01 19:11:28 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-01 19:11:28 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 19:11:28 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (0.7ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 18ms (Views: 14.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 19:16:49 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (207.4ms)
+Completed 200 OK in 385ms (Views: 373.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:16:50 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 19:16:50 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 19:16:50 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:16:50 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 19:16:50 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-fe1c4698ae9bd3ea546da1329047a2023897681cf3ef5d334eb83e2f86a04fa2.js?body=1" for ::1 at 2016-07-01 19:16:50 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-01 19:16:50 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 19:16:51 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (0.6ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 19:20:35 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (6.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (498.2ms)
+Completed 200 OK in 601ms (Views: 587.8ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:20:36 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 19:20:36 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-794ba38af2c80af31fb4de7e3848dfe8ae712b168baeb168e190cfad70542c59.js?body=1" for ::1 at 2016-07-01 19:20:36 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:20:36 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 19:20:36 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 19:20:36 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-01 19:20:36 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 19:20:37 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (1.0ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 19:23:48 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (283.2ms)
+Completed 200 OK in 404ms (Views: 395.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:23:49 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:23:49 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-1ed0aa33a464d0d38935f849b6206dbed5dda1abe35217a6746d12ee7c82509f.js?body=1" for ::1 at 2016-07-01 19:23:49 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 19:23:49 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 19:23:49 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 19:23:49 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-01 19:23:49 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 19:23:50 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (3.8ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 27ms (Views: 20.5ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 19:26:25 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (157.5ms)
+Completed 200 OK in 334ms (Views: 326.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 19:26:26 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:26:26 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:26:26 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 19:26:26 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 19:26:26 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-1ed0aa33a464d0d38935f849b6206dbed5dda1abe35217a6746d12ee7c82509f.js?body=1" for ::1 at 2016-07-01 19:26:26 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-01 19:26:26 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 19:26:26 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (1.0ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 19:43:11 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (236.3ms)
+Completed 200 OK in 347ms (Views: 333.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:43:12 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 19:43:12 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 19:43:12 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 19:43:12 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:43:12 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-1ed0aa33a464d0d38935f849b6206dbed5dda1abe35217a6746d12ee7c82509f.js?body=1" for ::1 at 2016-07-01 19:43:12 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-01 19:43:12 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 19:43:13 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (0.7ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 19:43:16 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (83.8ms)
+Completed 200 OK in 107ms (Views: 105.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:43:16 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 19:43:16 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:43:16 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 19:43:16 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 19:43:16 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-1ed0aa33a464d0d38935f849b6206dbed5dda1abe35217a6746d12ee7c82509f.js?body=1" for ::1 at 2016-07-01 19:43:16 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-01 19:43:16 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 19:43:17 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (0.8ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 19:43:29 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (35.9ms)
+Completed 200 OK in 69ms (Views: 67.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:43:30 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 19:43:30 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 19:43:30 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 19:43:30 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:43:30 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-1ed0aa33a464d0d38935f849b6206dbed5dda1abe35217a6746d12ee7c82509f.js?body=1" for ::1 at 2016-07-01 19:43:30 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-01 19:43:30 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 19:43:30 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (0.5ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 19:44:02 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (108.1ms)
+Completed 200 OK in 169ms (Views: 168.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:44:03 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:44:03 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 19:44:03 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 19:44:03 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 19:44:03 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-1ed0aa33a464d0d38935f849b6206dbed5dda1abe35217a6746d12ee7c82509f.js?body=1" for ::1 at 2016-07-01 19:44:03 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-01 19:44:03 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 19:44:04 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (0.4ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 19:45:06 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (121.9ms)
+Completed 200 OK in 310ms (Views: 295.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:45:08 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:45:08 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 19:45:08 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 19:45:08 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 19:45:08 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-1ed0aa33a464d0d38935f849b6206dbed5dda1abe35217a6746d12ee7c82509f.js?body=1" for ::1 at 2016-07-01 19:45:08 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-01 19:45:08 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 19:45:08 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (0.5ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 19:47:58 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (130.4ms)
+Completed 200 OK in 343ms (Views: 333.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:47:59 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 19:47:59 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 19:47:59 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 19:47:59 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:47:59 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-1ed0aa33a464d0d38935f849b6206dbed5dda1abe35217a6746d12ee7c82509f.js?body=1" for ::1 at 2016-07-01 19:47:59 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-01 19:47:59 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 19:48:00 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (0.6ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 19:48:30 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (35.8ms)
+Completed 200 OK in 103ms (Views: 102.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:48:31 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:48:31 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 19:48:31 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 19:48:31 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 19:48:31 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-1ed0aa33a464d0d38935f849b6206dbed5dda1abe35217a6746d12ee7c82509f.js?body=1" for ::1 at 2016-07-01 19:48:31 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-01 19:48:31 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 19:48:32 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (3.1ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 9ms (Views: 2.8ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 19:48:53 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (77.5ms)
+Completed 200 OK in 126ms (Views: 125.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:48:54 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:48:54 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 19:48:54 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 19:48:54 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 19:48:54 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-1ed0aa33a464d0d38935f849b6206dbed5dda1abe35217a6746d12ee7c82509f.js?body=1" for ::1 at 2016-07-01 19:48:54 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-01 19:48:54 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 19:48:55 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (0.6ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 19:49:31 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (11.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (163.4ms)
+Completed 200 OK in 304ms (Views: 273.0ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:49:33 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:49:33 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 19:49:33 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 19:49:33 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 19:49:33 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-1ed0aa33a464d0d38935f849b6206dbed5dda1abe35217a6746d12ee7c82509f.js?body=1" for ::1 at 2016-07-01 19:49:33 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-01 19:49:33 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 19:49:33 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (2.8ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 20ms (Views: 6.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 19:49:51 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (38.4ms)
+Completed 200 OK in 90ms (Views: 88.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 19:49:51 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:49:51 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:49:51 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 19:49:51 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 19:49:51 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-1ed0aa33a464d0d38935f849b6206dbed5dda1abe35217a6746d12ee7c82509f.js?body=1" for ::1 at 2016-07-01 19:49:51 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-01 19:49:51 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 19:49:52 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (0.5ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 19:50:08 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (126.1ms)
+Completed 200 OK in 180ms (Views: 178.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:50:09 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 19:50:09 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 19:50:09 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:50:09 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 19:50:09 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-01 19:50:09 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-1ed0aa33a464d0d38935f849b6206dbed5dda1abe35217a6746d12ee7c82509f.js?body=1" for ::1 at 2016-07-01 19:50:09 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 19:50:09 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (0.5ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-01 19:51:35 -0300
+Processing by ProfileController#show as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered profile/show.html within layouts/application (259.2ms)
+Completed 200 OK in 372ms (Views: 363.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:51:36 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-01 19:51:36 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-01 19:51:36 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-01 19:51:36 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-01 19:51:36 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-1ed0aa33a464d0d38935f849b6206dbed5dda1abe35217a6746d12ee7c82509f.js?body=1" for ::1 at 2016-07-01 19:51:36 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-01 19:51:36 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-01 19:51:37 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[35mLinkType Load (0.8ms)[0m  SELECT "link_types".* FROM "link_types"
+Completed 200 OK in 11ms (Views: 7.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-02 08:50:16 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (25.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProfileController#show as HTML
+  [1m[35mUser Load (24.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered profile/show.html within layouts/application (1127.6ms)
+Completed 200 OK in 1345ms (Views: 1109.0ms | ActiveRecord: 165.6ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-02 08:50:21 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-02 08:50:21 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-02 08:50:21 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-02 08:50:21 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-02 08:50:21 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-1ed0aa33a464d0d38935f849b6206dbed5dda1abe35217a6746d12ee7c82509f.js?body=1" for ::1 at 2016-07-02 08:50:21 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-02 08:50:22 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-02 08:50:23 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[36mLinkType Load (34.5ms)[0m  [1mSELECT "link_types".* FROM "link_types"[0m
+Completed 200 OK in 62ms (Views: 9.8ms | ActiveRecord: 38.2ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-02 09:33:45 -0300
+Processing by ProfileController#show as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered profile/show.html within layouts/application (311.0ms)
+Completed 200 OK in 561ms (Views: 537.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-02 09:33:47 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-02 09:33:47 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-02 09:33:47 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-02 09:33:47 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-02 09:33:47 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-ea9c0891dafb0c8d5d3116b08cb9124ff243ef8437380fbeaefeb91911fefedf.js?body=1" for ::1 at 2016-07-02 09:33:47 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-02 09:33:47 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-02 09:33:48 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[36mLinkType Load (0.8ms)[0m  [1mSELECT "link_types".* FROM "link_types"[0m
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-02 09:34:05 -0300
+Processing by ProfileController#show as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered profile/show.html within layouts/application (62.3ms)
+Completed 200 OK in 251ms (Views: 248.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-02 09:34:06 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-02 09:34:06 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-02 09:34:06 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-02 09:34:06 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-02 09:34:06 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-ea9c0891dafb0c8d5d3116b08cb9124ff243ef8437380fbeaefeb91911fefedf.js?body=1" for ::1 at 2016-07-02 09:34:06 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-02 09:34:06 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-02 09:34:07 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[36mLinkType Load (0.5ms)[0m  [1mSELECT "link_types".* FROM "link_types"[0m
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-02 09:34:29 -0300
+Processing by ProfileController#show as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered profile/show.html within layouts/application (79.7ms)
+Completed 200 OK in 158ms (Views: 155.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-02 09:34:31 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-02 09:34:31 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-02 09:34:31 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-02 09:34:31 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-02 09:34:31 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-02 09:34:31 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-ea9c0891dafb0c8d5d3116b08cb9124ff243ef8437380fbeaefeb91911fefedf.js?body=1" for ::1 at 2016-07-02 09:34:31 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-02 09:34:32 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[36mLinkType Load (0.8ms)[0m  [1mSELECT "link_types".* FROM "link_types"[0m
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-02 09:36:07 -0300
+Processing by ProfileController#show as HTML
+  [1m[35mUser Load (1.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered profile/show.html within layouts/application (135.2ms)
+Completed 200 OK in 306ms (Views: 286.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-02 09:36:08 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-02 09:36:08 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-02 09:36:08 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-02 09:36:08 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-02 09:36:08 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-ea9c0891dafb0c8d5d3116b08cb9124ff243ef8437380fbeaefeb91911fefedf.js?body=1" for ::1 at 2016-07-02 09:36:09 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-02 09:36:09 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-02 09:36:10 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[36mLinkType Load (0.9ms)[0m  [1mSELECT "link_types".* FROM "link_types"[0m
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-02 09:36:37 -0300
+Processing by ProfileController#show as HTML
+  [1m[35mUser Load (3.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered profile/show.html within layouts/application (56.1ms)
+Completed 200 OK in 157ms (Views: 151.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-02 09:36:38 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-02 09:36:38 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-02 09:36:38 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-02 09:36:38 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-02 09:36:39 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-ea9c0891dafb0c8d5d3116b08cb9124ff243ef8437380fbeaefeb91911fefedf.js?body=1" for ::1 at 2016-07-02 09:36:39 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-02 09:36:39 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-02 09:36:40 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[36mLinkType Load (0.5ms)[0m  [1mSELECT "link_types".* FROM "link_types"[0m
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-02 09:37:32 -0300
+Processing by ProfileController#show as HTML
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered profile/show.html within layouts/application (183.9ms)
+Completed 200 OK in 658ms (Views: 636.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-02 09:37:35 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[36mLinkType Load (0.9ms)[0m  [1mSELECT "link_types".* FROM "link_types"[0m
+Completed 200 OK in 14ms (Views: 10.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-02 09:40:32 -0300
+Processing by ProfileController#show as HTML
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered profile/show.html within layouts/application (39.1ms)
+Completed 200 OK in 126ms (Views: 123.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-02 09:40:33 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-02 09:40:33 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-02 09:40:33 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-02 09:40:33 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-02 09:40:33 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-ea9c0891dafb0c8d5d3116b08cb9124ff243ef8437380fbeaefeb91911fefedf.js?body=1" for ::1 at 2016-07-02 09:40:33 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-02 09:40:33 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-02 09:40:34 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[36mLinkType Load (0.6ms)[0m  [1mSELECT "link_types".* FROM "link_types"[0m
+Completed 200 OK in 10ms (Views: 6.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-02 09:41:13 -0300
+Processing by ProfileController#show as HTML
+  [1m[35mUser Load (12.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered profile/show.html within layouts/application (59.7ms)
+Completed 200 OK in 150ms (Views: 136.7ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-02 09:41:14 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-02 09:41:15 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-02 09:41:15 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-02 09:41:15 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-02 09:41:15 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-ea9c0891dafb0c8d5d3116b08cb9124ff243ef8437380fbeaefeb91911fefedf.js?body=1" for ::1 at 2016-07-02 09:41:15 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-02 09:41:15 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-02 09:41:16 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[36mLinkType Load (0.5ms)[0m  [1mSELECT "link_types".* FROM "link_types"[0m
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-02 09:42:02 -0300
+Processing by ProfileController#show as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered profile/show.html within layouts/application (13.0ms)
+Completed 200 OK in 48ms (Views: 46.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-02 09:42:03 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-02 09:42:03 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-02 09:42:03 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-02 09:42:03 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-ea9c0891dafb0c8d5d3116b08cb9124ff243ef8437380fbeaefeb91911fefedf.js?body=1" for ::1 at 2016-07-02 09:42:03 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-02 09:42:03 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-02 09:42:03 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-02 09:42:04 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[36mLinkType Load (0.4ms)[0m  [1mSELECT "link_types".* FROM "link_types"[0m
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-02 09:42:54 -0300
+Processing by ProfileController#show as HTML
+  [1m[35mUser Load (2.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered profile/show.html within layouts/application (197.7ms)
+Completed 200 OK in 471ms (Views: 457.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-02 09:42:55 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-02 09:42:55 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-02 09:42:55 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-02 09:42:55 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-02 09:42:55 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-02 09:42:55 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-1ed0aa33a464d0d38935f849b6206dbed5dda1abe35217a6746d12ee7c82509f.js?body=1" for ::1 at 2016-07-02 09:42:55 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-02 09:42:56 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[36mLinkType Load (0.7ms)[0m  [1mSELECT "link_types".* FROM "link_types"[0m
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/profile/show" for ::1 at 2016-07-02 09:45:07 -0300
+Processing by ProfileController#show as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered profile/show.html within layouts/application (37.9ms)
+Completed 200 OK in 104ms (Views: 102.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-02 09:45:08 -0300
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-07-02 09:45:08 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-02 09:45:08 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-02 09:45:08 -0300
+
+
+Started GET "/assets/ng-rails-csrf.self-41488baa6dcc00f40a36dd20de4aecae7798c54d69e843b13011d03870298b45.js?body=1" for ::1 at 2016-07-02 09:45:08 -0300
+
+
+Started GET "/assets/controllers/profile_controller.self-1ed0aa33a464d0d38935f849b6206dbed5dda1abe35217a6746d12ee7c82509f.js?body=1" for ::1 at 2016-07-02 09:45:08 -0300
+
+
+Started GET "/assets/services/profile_service.self-f86919f94fdfc9b66808302870d0a95085d848ae2f8f6fd65bf65b3aa49f706e.js?body=1" for ::1 at 2016-07-02 09:45:08 -0300
+
+
+Started GET "/link/listTypes" for ::1 at 2016-07-02 09:45:09 -0300
+Processing by LinkController#listTypes as JSON
+  [1m[36mLinkType Load (1.1ms)[0m  [1mSELECT "link_types".* FROM "link_types"[0m
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/profile/link?type=0&url=http:%2F%2Fwww.google.com.br" for ::1 at 2016-07-02 09:45:35 -0300
+Processing by LinkController#add as JSON
+  Parameters: {"type"=>"0", "url"=>"http://www.google.com.br"}
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.0ms)

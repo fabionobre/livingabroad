@@ -31,6 +31,21 @@ services.factory("Profile", function($http, $q) {
 				deferred.reject("error");
 			});
 			return deferred.promise;
+		},
+		getTypesTag: function() {
+			var deferred = $q.defer();
+			$http({
+				method: "GET",
+				url: "/link/listTypes"
+			})
+			.success(function(result) {
+				deferred.resolve(result.data);
+			})
+			.error(function(result, code) {
+				console.log("Something went wrong");
+				deferred.reject("error");
+			});
+			return deferred.promise;
 		}
 	};
 })

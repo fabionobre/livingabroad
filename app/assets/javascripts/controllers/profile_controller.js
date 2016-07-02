@@ -7,7 +7,12 @@ var controllers = angular.module('livingabroad.controller', [])
 	$scope.profile = {};
 	$scope.profile.tags = ["tag1", "tag2", "tag3"];
 	$scope.profile.links = [{'type':1, 'url':'www.google.com'}, {'type':2, 'url':'www.facebook.com'}, {'type':3, 'url':'www.github.com'}];
-	$scope.modeEdit = false;
+	$scope.modeEdit = false;	
+	$scope.linkTypes = [];
+
+	Profile.getTypesTag().then(function (result) {
+		$scope.linkTypes = result;
+	});
 
 	resetAll();	
 
